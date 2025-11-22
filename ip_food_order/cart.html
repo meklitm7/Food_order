@@ -1,1 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tech 6 — Cart</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/7/71/Flag_of_Ethiopia.svg" alt="Flag of Ethiopia" class="logo" width="60" />
+  <h1 class="site-title">Tech 6</h1>
+        <nav aria-label="Main navigation">
+          <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="order.html">Order</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
+    <main>
+      <section class="cart container" aria-labelledby="cart-heading">
+        <h2 id="cart-heading">Your Cart</h2>
+
+        <table class="cart-table" aria-describedby="cart-summary">
+          <thead>
+            <tr>
+              <th scope="col">Item</th>
+              <th scope="col">Price</th>
+              <th scope="col">Qty</th>
+              <th scope="col">Subtotal</th>
+              <th scope="col">Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Doro Wat</td>
+              <td>250 ETB</td>
+              <td><input type="number" min="1" value="1" aria-label="Quantity for Doro Wat" /></td>
+              <td>250 ETB</td>
+              <td><button class="remove">Remove</button></td>
+            </tr>
+            <tr>
+              <td>Ethiopian Coffee</td>
+              <td>40 ETB</td>
+              <td><input type="number" min="1" value="2" aria-label="Quantity for Ethiopian Coffee" /></td>
+              <td>80 ETB</td>
+              <td><button class="remove">Remove</button></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="total" id="cart-summary">
+          <p>Subtotal: <span>330 ETB</span></p>
+          <p>Delivery: <span>50 ETB</span></p>
+          <p class="grand-total">Total: <strong>380 ETB</strong></p>
+          <a class="btn primary" href="order.html">Proceed to Checkout</a>
+        </div>
+      </section>
+    </main>
+
+      <footer>
+      <div class="container">
+        <p>Contact: Tech 6 — Addis Ababa • Tel: +251 11 123 4567</p>
+        <p>&copy; 2025 Tech 6. Prices shown in ETB (Ethiopian Birr).</p>
+      </div>
+    </footer>
+  </body>
+</html>
