@@ -85,7 +85,7 @@ This creates **frustration, wasted time, and stressed cafeteria staff**.
 
 ## 📦 Deliverables
 - `README.md` – This document  
-- Front-end files: `index.html`, `menu.html`, `cart.html`, `styles.css`, `app.js`  
+- Front-end files: `home.html`, `menu.html`, `cart.html`, `styles.css`, `app.js`  
 - Demo presentation & usage notes  
 
 ---
