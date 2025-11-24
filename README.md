@@ -1,5 +1,5 @@
 # 🍽 SixPlates — AASTU Student Cafeteria Food Ordering System
-*(Serving Central, Kibinash & KK cafeterias)*
+*(Serving Central, Kibinesh & KK cafeterias)*
 
 ---
 
