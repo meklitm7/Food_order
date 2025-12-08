@@ -1,77 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-        <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Tech 6 — Order</title>
-    </head>
-    <body>
-        <header>
-            <div class="container">
-   <h1 class="site-title">Tech 6</h1>
-                <nav aria-label="Main navigation">
-                    <ul class="nav-list">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="menu.html">Menu</a></li>
-                        <li><a href="cart.html">Cart</a></li>
-                        <li><a href="order.html">Order</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AASTUBITE - Order</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-        <main>
-            <section class="order container" aria-labelledby="order-heading">
-                <h2 id="order-heading">Place Your Order</h2>
+<nav>
+    <div class="logo">AASTUBITE</div>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Order</a></li>
+        <li><a href="#">Cart</a></li>
+    </ul>
+</nav>
 
-                <form action="#" method="post" novalidate>
-                    <fieldset>
-                        <legend>Contact Information</legend>
+<div class="order-container">
+    <h2>Place your order</h2>
 
-                        <label for="name">Full name</label>
-                        <input id="name" name="name" type="text" required /><br>  <br>
+    <label>Full Name</label>
+    <input type="text" placeholder="Enter your full name">
 
+    <label>Phone Number</label>
+    <input type="text" placeholder="Enter your phone number" style="margin-bottom:15px;">
 
-                        <label for="email">Email</label>
-                        <input id="email" name="email" type="email" required /> <br>  <br>
+    <fieldset>
+        <legend>ADDRESS DETAILS</legend>
+        <label>Address</label>
+        <input type="text" placeholder="Enter your address">
+        <label>City</label>
+        <input type="text" placeholder="Enter your city">
+    </fieldset>
 
-                        <label for="phone">Phone</label>
-                        <input id="phone" name="phone" type="tel" required />
-                    </fieldset>
+    <label>Payment Method</label>
+    <select>
+        <option>Cash</option>
+        <option>Mobile Banking</option>
+    </select>
 
-                    <fieldset>
-                        <legend>Delivery Address</legend>
+    <label>Email Address</label>
+    <input type="email" placeholder="example@gmail.com">
 
-                        <label for="address">Address</label>
-                        <textarea id="address" name="address" rows="3" required></textarea> <br> <br>
+    <fieldset>
+        <legend>FOOD DETAILS</legend>
+        <label>Food Item Name</label>
+        <input type="text" placeholder="Enter food name (e.g., Burger, Pizza)">
+        <label>Quantity</label>
+        <input type="number" value="1" min="1">
+    </fieldset>
 
-                        <label for="city">City</label>
-                        <input id="city" name="city" type="text" required />   <br><br>
+    <label>Additional Notes</label>
+    <textarea rows="4" placeholder="Any extra instructions? (Optional)"></textarea>
 
-                        <label for="payment">Payment Method</label>
-                        <select id="payment" name="payment">
-                            <option value="cod">Cash on Delivery</option>
-                            <option value="mobile">Mobile Money</option>
-                        </select>
-                    </fieldset>
+    <button>Confirm Order</button>
 
-                    <fieldset>
-                        <legend>Order Summary</legend>
-                        <p>Items total: <span>330 ETB</span></p>
-                        <p>Delivery: <span>50 ETB</span></p>
-                        <p class="grand-total">Total: <strong>380 ETB</strong></p>
-                    </fieldset>
+    <h3 style="margin-top:40px; color:#d40000;">Order Summary</h3>
+    <p id="foodPrice">Food Price: 0 ETB</p>
+    <p>Delivery Price: 50 ETB</p>
+    <p id="totalPrice"><strong>Total Price: 50 ETB</strong></p>
 
-                    <button type="submit" class="btn primary">Submit Order</button>
-                </form>
-            </section>
-        </main>
+    <script>
+        const quantityInput = document.querySelector('input[type="number"]');
+        const foodPriceEl = document.getElementById('foodPrice');
+        const totalPriceEl = document.getElementById('totalPrice');
 
-            <footer>
-            <div class="container">
-                <p>Contact: Tech 6 — Addis Ababa • Tel: +251 11 123 4567</p>
-                <p>&copy; 2025 Tech 6. Prices shown in ETB (Ethiopian Birr).</p>
-            </div>
-        </footer>
-    </body>
+        function calculatePrice() {
+            let price = 100;
+            let qty = Number(quantityInput.value);
+            let foodTotal = price * qty;
+            let total = foodTotal + 50;
+            foodPriceEl.textContent = `Food Price: ${foodTotal} ETB`;
+            totalPriceEl.innerHTML = `<strong>Total Price: ${total} ETB</strong>`;
+        }
+
+        quantityInput.addEventListener('input', calculatePrice);
+    </script>
+</div>
+
+<footer>
+    © 2025 AASTUBITE | All Rights Reserved | Price is shown in ETB (Ethiopian Birr)
+</footer>
+
+</body>
 </html>
