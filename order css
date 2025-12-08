@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #fff5f5;
+    color: #2a2a2a;
+}
+nav {
+    background: #d40000;
+    padding: 18px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+nav .logo {
+    font-size: 26px;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 1.5px;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 35px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    transition: 0.3s;
+    padding: 5px 10px;
+    border-radius: 6px;
+}
+nav ul li a:hover {
+    background: rgba(255,255,255,0.2);
+}
+.order-container {
+    max-width: 900px;
+    margin: 60px auto;
+    background: white;
+    padding: 50px 40px;
+    border-radius: 25px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.order-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px rgba(0,0,0,0.15);
+}
+.order-container h2 {
+    text-align: center;
+    margin-bottom: 35px;
+    color: #d40000;
+    font-size: 34px;
+    text-transform: none;
+    letter-spacing: 2px;
+}
+label {
+    display: block;
+    font-weight: 600;
+    margin-top: 18px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+input, select, textarea {
+    width: 100%;
+    padding: 14px;
+    border: 2px solid #ffcccc;
+    border-radius: 12px;
+    font-size: 15px;
+    outline: none;
+    transition: 0.3s;
+    background: #fffafc;
+}
+input:focus, select:focus, textarea:focus {
+    border-color: #d40000;
+    box-shadow: 0 0 10px rgba(212,0,0,0.3);
+}
+button {
+    width: 100%;
+    padding: 16px;
+    margin-top: 30px;
+    background: #d40000;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+}
+button:hover {
+    opacity: 0.85;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+fieldset {
+    border: 2px solid #ffcccc;
+    padding: 25px;
+    border-radius: 15px;
+    margin-top: 25px;
+    background: #fff7f7;
+}
+legend {
+    font-weight: 700;
+    color: #d40000;
+    padding: 0 12px;
+}
+footer {
+    background: #d40000;
+    padding: 25px;
+    text-align: center;
+    color: white;
+    margin-top: 60px;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
