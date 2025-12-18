@@ -1,73 +1,73 @@
-# 🍽 SixPlates — AASTU Student Cafeteria Food Ordering System
-*(Serving Central, Kibinesh & KK cafeterias)*
+# 🍴 AASTU Bite — Student Cafeteria Food Ordering System
+*(Serving Central & KK cafeterias at AASTU)*
 
 ---
 
 ## 🌟 Project Title
-**SixPlates:** AASTU Student Cafeteria Food Ordering Website
+**AASTU Bite:** Student Cafeteria Food Ordering Website  
 
 ---
 
 ## 👥 Team / Organization
-- **Organization:** SixPlates  
+- **Organization:** AASTU Bite  
 - **Course:** Internet Programming I (Mini Project)  
 - **Institution:** Addis Ababa Science and Technology University (AASTU)  
 
 ---
 
 ## 📚 Background & Problem Statement
-At AASTU, students often rely on three main cafeterias—**Central**, **Kibinash**, and **KK**—for daily meals. Currently, ordering food means calling the cafeteria, waiting in line, and manually tracking orders.  
+At AASTU, students rely heavily on two main cafeterias—**Central** and **KK**—for daily meals. Currently, ordering food means calling the cafeteria or waiting in long queues, which creates **frustration, delays, and high workload for staff**.  
 
-This creates **frustration, wasted time, and stressed cafeteria staff**.  
+🎯 **Goal:** Simplify and modernize the food-ordering process by creating an **interactive front-end website** where students can browse menus, choose their food, and select the cafeteria (KK or Central) for pickup.  
 
-🎯 **Goal:** Modernize the food-ordering workflow by building a **fun, simple, and interactive front-end website** where students can browse menus and place orders in a few clicks.  
-
-> Think of it as your **cafeteria assistant in your pocket… but on a website!**  
+> Think of it as your **personal cafeteria assistant online!**  
 
 ---
 
 ## 🏆 Objectives
-- Design a **clear, responsive, and visually friendly website**.  
+- Design a **clear, responsive, and user-friendly website**.  
 - Implement **dynamic features**: menu browsing, cart management, and order forms with validation using HTML, CSS, and JavaScript.  
-- Deliver a **working prototype** ready for future backend integration.  
-- Lay a roadmap for **Internet Programming II** with scalable ideas.  
+- Allow users to **choose the cafeteria (KK or Central)** when placing an order.  
+- Deliver a **working front-end prototype** ready for backend integration later.  
 
 ---
 
 ## 📌 Scope
-**Cafeterias Covered:** Central, Kibinash, and KK  
+**Cafeterias Covered:** Central and KK  
 **Users:** Students & cafeteria staff  
 
 **Phase 1 (Mini Project):**  
-- Pure **front-end prototype** (HTML/CSS/JS)  
+- Front-end prototype (HTML/CSS/JS) only  
 - No database or server yet  
 
 **Future Scope (Phase 2+):**  
-- PHP backend & database  
-- Authentication & admin dashboard  
-- Order history & notifications  
+- PHP backend & database for orders  
+- Student authentication & order history  
+- Admin dashboard for cafeterias  
+- Notifications when orders are ready  
 
 ---
 
 ## 🍔 Key Features (Functional Requirements)
-1. **Home Page** – Quick cafeteria links, featured menu items, and project branding.  
-2. **Cafeteria Menus** – Each cafeteria has its own page with **images, descriptions, prices, and availability**.  
-3. **Cart System** – Add/remove items, update quantities, see totals in **real-time**.  
-4. **Order Form** – Collects student info (name, ID, contact, pickup cafeteria) and **validates inputs** with JavaScript.  
-5. **Order Summary** – Shows order details before confirmation (prototype phase: **no database yet**).  
-6. **Responsive Design** – Works smoothly on **mobile & desktop** for on-the-go students.  
+1. **Home Page** – Quick links to cafeterias, featured menu items, and project branding.  
+2. **Menu Pages** – Displays all food items with **images, descriptions, prices, and availability**.  
+3. **Cafeteria Selection** – Students select **Central or KK** for their order.  
+4. **Cart System** – Add/remove items, update quantities, see totals **dynamically**.  
+5. **Order Form** – Collects student info (name, ID, contact, pickup cafeteria) with **JavaScript validation**.  
+6. **Order Summary** – Shows final order details before confirmation (prototype phase: **no database yet**).  
+7. **Responsive Design** – Works on **mobile and desktop** for on-the-go students.  
 
 ---
 
 ## ⚡ Non-Functional Requirements
-- **Usability:** Few clicks, fast browsing.  
-- **Performance:** Lightweight, **loads in a flash**.  
-- **Maintainability:** Clean, modular code ready for future backend integration.  
+- **Usability:** Few clicks, intuitive navigation.  
+- **Performance:** Lightweight and **fast-loading pages**.  
+- **Maintainability:** Modular and clean HTML/CSS/JS ready for future backend integration.  
 
 ---
 
 ## 💻 Proposed Technology Stack (Phase 1)
-- **Front-end:** HTML5, CSS3 (optionally Bootstrap), JavaScript (vanilla)  
+- **Front-end:** HTML5, CSS3 , JavaScript  
 - **Hosting:** Local or simple static hosting  
 - **Future:** PHP + MySQL/SQLite + admin dashboard  
 
@@ -77,25 +77,25 @@ This creates **frustration, wasted time, and stressed cafeteria staff**.
 | Phase | Duration | Tasks |
 |-------|---------|-------|
 | Phase 0 — Proposal & Design | 1 week | Wireframes, synopsis, design planning |
-| Phase 1 — Front-end Implementation | 2–3 weeks | Responsive pages, cart logic, validation |
+| Phase 1 — Front-end Implementation | 2–3 weeks | Responsive pages, cart logic, cafeteria selection, validation |
 | Phase 2 — Testing & Demo | 1 week | Peer testing, layout fixes, demo prep |
 | Phase 3 — Server Integration (Future) | TBD | PHP endpoints, database, admin dashboard |
 
 ---
 
 ## 📦 Deliverables
-- `README.md` – This document  
-- Front-end files: `home.html`, `menu.html`, `cart.html`, `styles.css`, `app.js`  
+- `docs/Synopsis.md` – This document  
+- Front-end files: `index.html`, `menu.html`, `cart.html`, `styles.css`, `app.js`  
 - Demo presentation & usage notes  
 
 ---
 
 ## 🚀 Future Enhancements
-- Persistent orders with PHP & database  
+- Persistent order storage with PHP & database  
 - Student authentication & order history  
-- Admin dashboard for cafeterias  
+- Cafeteria admin dashboard to manage menu and view orders  
 - Notifications when orders are ready  
-- Expand to more cafeterias or commercial rollout  
+- Expansion to more cafeterias or campus-wide rollout  
 
 ---
 
@@ -108,9 +108,9 @@ This creates **frustration, wasted time, and stressed cafeteria staff**.
 ---
 
 ## 🎯 Conclusion
-SixPlates aims to **reduce waiting time and stress** by offering a **friendly, interactive web ordering prototype** for AASTU cafeterias.  
+AASTU Bite aims to **reduce waiting time and stress** by offering a **friendly, interactive web ordering prototype** for AASTU’s Central and KK cafeterias.  
 
-This mini project delivers **core front-end functionality** and builds a **strong foundation** for backend expansion in future courses.  
+This mini project focuses on **front-end functionality** while building a solid foundation for backend features in future courses.  
 
 ---
 
