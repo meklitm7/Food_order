@@ -3,16 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us </title>
-    
+    <title>About AASTU Bite</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header Section -->
+
+    <!-- Header -->
     <header>
-        <div >
-            
+        <div class="container">
+            <div class="logo">
+                <h1>AASTU Bite</h1>
+            </div>
+
             <nav>
-                <ul>
+                <ul class="nav-links">
                     <li><a href="home.html">Home</a></li>
                     <li><a href="menu.html">Menu</a></li>
                     <li><a href="about.html" class="active">About</a></li>
@@ -22,85 +26,119 @@
         </div>
     </header>
 
-    <!-- About Section -->
-    <section>
-        <div>
-            <div>
-                <h1>About Tech6 Restaurant </h1>
-                <p>Learn more about our story and mission</p>
+    <!-- About Page -->
+    <section class="about-page">
+        <div class="container">
+
+            <!-- Page Header -->
+            <div class="about-header">
+                <h1>About AASTU Bite</h1>
+                <p>A simple and reliable way to order food on campus</p>
             </div>
-            
-            <div>
-                <h2>Our Story</h2>
-                <p>Founded in 2025, Tech6 Restaurant began with a simple mission: to deliver delicious, high-quality food to our customers' doorsteps. What started as a small kitchen operation has grown into a beloved local favorite, known for our innovative recipes and exceptional service.</p>
-                
-                <h2>Our Mission</h2>
-                <p>We believe that great food brings people together. Our mission is to create memorable dining experiences by using the freshest ingredients, crafting unique flavors, and providing outstanding customer service. Every dish we prepare is made with passion and care.</p>
-                
-                <h2>Quality Ingredients</h2>
-                <p>We source our ingredients from local farmers and suppliers who share our commitment to quality and sustainability. From farm-fresh vegetables to premium meats, we ensure that every component of our dishes meets our high standards.</p>
-                
-                <h2>Our Chefs</h2>
-                <p>Our talented team of chefs brings years of experience and creativity to the kitchen. Each chef specializes in different cuisines, allowing us to offer a diverse menu that caters to all tastes and preferences.</p>
+
+            <!-- Main Content: Two-Column Layout -->
+            <div class="about-content two-column">
+
+                <!-- Left Column -->
+                <div class="about-left">
+
+                    <div class="about-section">
+                        <h2>Who We Are</h2>
+                        <p>
+                            AASTU Bite is a campus-based food ordering platform designed
+                            to simplify how students access cafeteria services at
+                            Addis Ababa Science and Technology University.
+                        </p>
+                    </div>
+
+                    <div class="about-section">
+                        <h2>What We Offer</h2>
+                        <p>
+                            Students can browse menus, select meals, and choose
+                            where to pick up their food before arriving at the cafeteria.
+                        </p>
+                    </div>
+
+                    <div class="about-section about-highlight">
+                        <h2>Cafeterias Covered</h2>
+                        <ul>
+                            <li>🍽️ Central Cafeteria</li>
+                            <li>🍽️ KK Cafeteria</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <!-- Right Column -->
+                <div class="about-right">
+
+                    <div class="about-section">
+                        <h2>How It Works</h2>
+                        <ol>
+                            <li>🖥️ Browse available meals</li>
+                            <li>🛒 Add items to your cart</li>
+                            <li>🏫 Choose a cafeteria</li>
+                            <li>⏱️ Pick up with minimal waiting</li>
+                        </ol>
+                    </div>
+
+                    <div class="about-section">
+                        <h2>Why AASTU Bite</h2>
+                        <ul>
+                            <li>⏱️ Saves time during busy hours</li>
+                            <li>📱 Simple and student-friendly interface</li>
+                            <li>🏫 Built specifically for AASTU</li>
+                            <li>📋 Clear menu access before arrival</li>
+                        </ul>
+                    </div>
+
+                </div>
+
             </div>
+
         </div>
     </section>
 
-    <!-- Cart Modal -->
-    <div>
-        <div>
-            <div>
-                <h2>Your Cart</h2>
-                <span>&times;</span>
-            </div>
-            <div>
-                <div>
-                    <!-- Cart items will be loaded here -->
-                    <p>Your cart is empty</p>
-                </div>
-                <div>
-                    <div>
-                        <h3>Total: $<span>0.00</span></h3>
-                    </div>
-                    <button>Checkout</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <!-- Footer -->
     <footer>
-        <div>
-            <div>
-                <div>
-                    <h3>Tech6 Restaurant</h3>
-                    <p>Delivering delicious food with love since 2025</p>
-                </div>
-                <div class="footer-section">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="menu.html">Menu</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="cart.html">Cart</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h3>Contact Us</h3>
-                    <p>Contact: Tech 6 — Addis Ababa, Ethiopia • Tel: +251 11 123 4567</p>
-                    <p>
-                     Follow us:
-                    <a href="#" aria-label="Tech 5 on Facebook">Facebook</a> |
-                    <a href="#" aria-label="Tech 6 on Instagram">Instagram</a>
-                    </p>
-                </div>
+        <div class="container footer-content">
+
+            <div class="footer-section">
+                <h3>AASTU Bite</h3>
+                <p>
+                    A campus food ordering platform designed to
+                    simplify cafeteria services for AASTU students.
+                </p>
             </div>
-            <div>
-                <p>&copy; 2025 Tech 6. Prices shown in ETB (Ethiopian Birr).</p>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                </ul>
             </div>
+
+            <div class="footer-section">
+                <h3>Service Info</h3>
+                <p>📍 Addis Ababa Science and Technology University</p>
+                <p>🏫 Central & KK Cafeterias</p>
+                <p>📧 info@aastubite.com</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 AASTU Bite. All rights reserved.</p>
         </div>
     </footer>
 
-    
 </body>
 </html>
+
+
+
+
+
