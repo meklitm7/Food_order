@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 * {
     margin: 0;
@@ -179,3 +180,241 @@ footer {
     .about-content.two-column,
     .contact-content { grid-template-columns: 1fr; }
 }
+=======
+/* ================================
+   About Page: Two-Column Layout & Accent
+================================ */
+
+.about-page {
+    padding: 80px 0;
+    background-color: #f0f2f5;
+}
+
+.about-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.about-header h1 {
+    font-size: 2.8rem;
+    color: #A31515;
+    margin-bottom: 15px;
+}
+
+.about-header p {
+    font-size: 1.2rem;
+    color: #555;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Two-column layout */
+.about-content.two-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.about-left,
+.about-right {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.about-section h2 {
+    color: #A31515;
+    margin-bottom: 15px;
+}
+
+.about-section p {
+    color: #555;
+    line-height: 1.7;
+}
+
+.about-section ul,
+.about-section ol {
+    padding-left: 20px;
+}
+
+.about-section ul li,
+.about-section ol li {
+    margin-bottom: 10px;
+}
+
+.about-highlight {
+    background: #f8f9fa;
+    border-left: 5px solid #A31515;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    background: #A31515;
+    color: white;
+    padding: 50px 0 20px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.footer-section h3 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.footer-section p,
+.footer-section a {
+    color: #f1f1f1;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .about-content.two-column {
+        grid-template-columns: 1fr;
+    }
+
+    .about-header h1 {
+        font-size: 2.2rem;
+    }
+
+    .about-header p {
+        font-size: 1rem;
+    }
+}
+/* ================================
+   cart Page
+================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f51818;
+    padding: 15px 30px;
+    color:#FFF;
+}
+
+.navbar nav a {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.navbar nav a.active {
+    text-decoration: underline;
+}
+
+.container {
+    padding: 20px;
+}
+
+.cart-items h2 {
+    margin-bottom: 15px;
+}
+
+.cart-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+.item {
+    display: grid;
+    grid-template-columns: 100px 1fr auto;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #3aac40;
+}
+
+.item img {
+    width: 100px;
+    border-radius: 6px;
+}
+
+.price {
+    font-weight: bold;
+}
+
+.summary {
+    float: right;
+    width: 30%;
+    margin-top: 25px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f8f8f8;
+}
+
+.summary h2 {
+    margin-bottom: 10px;
+}
+
+.summary button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.summary button:hover {
+    background-color: #4e0429;
+}
+
+.clear {
+    clear: both;
+}
+
+footer {
+    margin-top: 40px;
+    padding: 15px;
+    text-align: center;
+    background-color: #eee;
+}
+
+@media (max-width: 768px) {
+    .summary {
+        float: none;
+        width: 100%;
+    }
+
+    .item {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
+/* ================================
+   cart Page
+================================ */
+
+>>>>>>> b0a4561 (Update style.css)
