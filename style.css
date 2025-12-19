@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
  
 .about-page {
     padding: 80px 0;
@@ -1833,6 +1834,8 @@ button:hover {
 /* =====================
    ABOUT PAGE STYLES
 ===================== */
+=======
+>>>>>>> 0edb52c (Create style.css)
 .about-page {
     padding: 80px 0;
     background-color: #f0f2f5;
@@ -1856,13 +1859,22 @@ button:hover {
     margin: 0 auto;
 }
 
+<<<<<<< HEAD
+=======
+/* Two-column layout */
+>>>>>>> 0edb52c (Create style.css)
 .about-content.two-column {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
 }
 
+<<<<<<< HEAD
 .about-left, .about-right {
+=======
+.about-left,
+.about-right {
+>>>>>>> 0edb52c (Create style.css)
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -1878,11 +1890,21 @@ button:hover {
     line-height: 1.7;
 }
 
+<<<<<<< HEAD
 .about-section ul, .about-section ol {
     padding-left: 20px;
 }
 
 .about-section ul li, .about-section ol li {
+=======
+.about-section ul,
+.about-section ol {
+    padding-left: 20px;
+}
+
+.about-section ul li,
+.about-section ol li {
+>>>>>>> 0edb52c (Create style.css)
     margin-bottom: 10px;
 }
 
@@ -1893,6 +1915,7 @@ button:hover {
     border-radius: 8px;
 }
 
+<<<<<<< HEAD
 /* =====================
    CONTACT PAGE STYLES
 ===================== */
@@ -1967,6 +1990,13 @@ button:hover {
     text-align: center;
     padding: 12px;
     margin-top: 20px;
+=======
+/* Footer */
+footer {
+    background: #A31515;
+    color: white;
+    padding: 50px 0 20px;
+>>>>>>> 0edb52c (Create style.css)
 }
 
 .footer-content {
@@ -1981,7 +2011,12 @@ button:hover {
     font-size: 1.5rem;
 }
 
+<<<<<<< HEAD
 .footer-section p, .footer-section a {
+=======
+.footer-section p,
+.footer-section a {
+>>>>>>> 0edb52c (Create style.css)
     color: #f1f1f1;
     text-decoration: none;
 }
@@ -1996,6 +2031,7 @@ button:hover {
     border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
+<<<<<<< HEAD
 /* Notification styles */
 .notification {
     position: fixed;
@@ -2187,3 +2223,19 @@ nav ul li:hover .sub { display: block; }
 
 }
 >>>>>>> aee18c3 (add css file)
+=======
+/* Responsive */
+@media (max-width: 768px) {
+    .about-content.two-column {
+        grid-template-columns: 1fr;
+    }
+
+    .about-header h1 {
+        font-size: 2.2rem;
+    }
+
+    .about-header p {
+        font-size: 1rem;
+    }
+}
+>>>>>>> 0edb52c (Create style.css)
