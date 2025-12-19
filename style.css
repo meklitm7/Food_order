@@ -351,4 +351,172 @@ footer {
     font-size: 14px;
     letter-spacing: 1px;
 }
+/* ================================
+   Contact Page Styles
+================================ */
 
+.contact-page {
+    padding: 80px 0;
+    background-color: #f0f2f5;
+}
+
+.contact-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.contact-header h1 {
+    font-size: 2.8rem;
+    color: #A31515; /* Same as About page */
+    margin-bottom: 15px;
+}
+
+.contact-header p {
+    font-size: 1.2rem;
+    color: #555;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.contact-form {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto 50px auto;
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #A31515; /* Same accent color */
+}
+
+.contact-form .form-group input,
+.contact-form .form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.contact-form .form-group input:focus,
+.contact-form .form-group textarea:focus {
+    border-color: #A31515;
+    outline: none;
+}
+
+.contact-form textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.contact-form button.btn-primary {
+    display: inline-block;
+    background: linear-gradient(135deg, #A31515, #8B1010);
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.contact-form button.btn-primary:hover {
+    background: linear-gradient(135deg, #8B1010, #A31515);
+    transform: translateY(-2px);
+}
+
+/* Contact Info Section */
+.contact-info {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-info .about-content {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h2 {
+    color: #A31515; /* Same as About page accent */
+    margin-bottom: 15px;
+}
+
+.contact-info p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.contact-info i {
+    color: #A31515; /* Accent color for icons */
+    margin-right: 10px;
+}
+
+.close-btn {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background: #A31515;
+    color: white;
+    padding: 50px 0 20px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.footer-section h3 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.footer-section p,
+.footer-section a {
+    color: #f1f1f1;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contact-header h1 {
+        font-size: 2.2rem;
+    }
+
+    .contact-header p {
+        font-size: 1rem;
+    }
+
+    .contact-form, .contact-info .about-content {
+        padding: 20px;
+    }
+}
