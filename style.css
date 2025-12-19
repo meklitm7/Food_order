@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+ 
 
 * {
     margin: 0;
@@ -180,7 +180,7 @@ footer {
     .about-content.two-column,
     .contact-content { grid-template-columns: 1fr; }
 }
-=======
+ 
 /* ================================
    About Page: Two-Column Layout & Accent
 ================================ */
@@ -535,4 +535,3 @@ footer {
     letter-spacing: 1px;
 }
 
->>>>>>> b0a4561 (Update style.css)
