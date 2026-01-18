@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AASTUBITE - Order</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<nav>
+    <div class="logo"><img src="C:\Users\Hp-NoteBook\javaPractice\image\AASTUBite-removebg-preview.png" width="50px" height="50px" alt="AASTU Bite Logo"></div>
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="central-menu.html">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+         
+        <li><a href="order.html" class="active">Order</a></li>
+        <li><a href="cart.html">Cart</a></li>
+    </ul>
+</nav>
+
+<div class="order-container">
+    <h2>Place your order</h2>
+
+    <form class="order-form">
+        <label>Full Name *</label>
+        <input type="text" name="fullName" placeholder="Enter your full name" required>
+
+        <label>Phone Number *</label>
+        <input type="tel" name="phone" placeholder="Enter your phone number" required>
+
+        <fieldset>
+            <legend>ADDRESS DETAILS</legend>
+            <label>Block Number *</label>
+            <input type="text" name="blockNumber" placeholder="Enter your block number" required>
+            <label>Dorm Number *</label>
+            <input type="text" name="dormNumber" placeholder="Enter your dorm number" required>
+        </fieldset>
+
+        <label>Payment Method</label>
+        <select name="paymentMethod">
+            <option value="cash">Cash</option>
+            <option value="mobile">Mobile Banking</option>
+        </select>
+
+        <label>Email Address *</label>
+        <input type="email" name="email" placeholder="example@gmail.com" required>
+
+        <label>Additional Notes</label>
+        <textarea name="notes" rows="4" placeholder="Any extra instructions? (Optional)"></textarea>
+
+        <button type="submit">Confirm Order</button>
+    </form>
+
+    <h3 style="margin-top:40px; color:#d40000;">Order Summary</h3>
+    <div class="order-summary">
+        <!-- Order summary will be populated by JS -->
+    </div>
+</div>
+
+<footer>
+        <div class="container footer-content">
+
+            <div class="footer-section">
+                <h3>AASTU Bite</h3>
+                <p>
+                    A campus food ordering platform designed to
+                    simplify cafeteria services for AASTU students.
+                </p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="kk-menu.html">kk Menu</a></li>
+      <li><a href="central-menu.html">Central Menu</a></li>
+      <li><a href="order.html">Order</a></li>
+      <li><a href="cart.html">Cart</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Service Info</h3>
+                <p>📍 Addis Ababa Science and Technology University</p>
+                <p>🏫 Central & KK Cafeterias</p>
+                <p>📧 info@aastubite.com</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 AASTU Bite. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
