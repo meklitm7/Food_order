@@ -126,72 +126,78 @@ Develop a **dynamic, web-based food ordering system** for AASTU cafeterias.
 ## 📄 SRS Overview of Existing System (beU Delivery)
 
 ### Use Case of Existing System (Reference)
-useCaseDiagram
-    actor "Customer/User" as customer
-    actor "Delivery Staff/Courier" as courier
-    actor "Restaurant" as restaurant
-    actor "Admin (System/Platform)" as admin
+%% beU Delivery Use Case Diagram
+%% Actors: stick figures, Functionalities: ovals
 
-    rectangle beUDeliverySystem {
-        %%% Customer/User Functionalities
-        usecase "Register / Login" as register
-        usecase "Browse Restaurants" as browseRestaurants
-        usecase "Browse Menu Items" as browseMenu
-        usecase "Add Items to Cart" as addToCart
-        usecase "Place Order" as placeOrder
-        usecase "Make Payment" as makePayment
-        usecase "Track Order (Real-time GPS)" as trackOrder
-        usecase "Cancel Order" as cancelOrder
-        usecase "View Order History" as viewHistory
-        usecase "Receive Notifications" as notifications
-        usecase "Refer Friends / Rewards" as referFriends
+flowchart TD
+    %% Actors
+    A[/"Customer/User"/]
+    B[/"Delivery Staff"/]
+    C[/"Restaurant"/]
+    D[/"Admin"/]
 
-        %%% Delivery Staff/Courier Functionalities
-        usecase "Receive Delivery Requests" as receiveRequests
-        usecase "View Locations (Restaurant & Customer)" as viewLocations
-        usecase "Update Delivery Status" as updateStatus
-        usecase "Communicate with Customer" as communicate
-        usecase "View Delivery History" as viewDeliveryHistory
+    %% Functionalities - Customer/User
+    F1(("Register / Login"))
+    F2(("Browse Restaurants"))
+    F3(("Browse Menu Items"))
+    F4(("Add Items to Cart"))
+    F5(("Place Order"))
+    F6(("Make Payment"))
+    F7(("Track Order via GPS"))
+    F8(("Cancel Order"))
+    F9(("View Order History"))
+    F10(("Receive Notifications"))
+    F11(("Refer Friends / Rewards"))
 
-        %%% Restaurant Functionalities
-        usecase "Receive New Orders" as receiveOrders
-        usecase "Confirm Order Preparation" as confirmOrder
-        usecase "Update Menu / Availability" as updateMenu
+    %% Functionalities - Delivery Staff
+    F12(("Receive Delivery Requests"))
+    F13(("View Restaurant & Customer Location"))
+    F14(("Update Delivery Status"))
+    F15(("Communicate with Customer"))
+    F16(("View Delivery History"))
 
-        %%% Admin/System Functionalities
-        usecase "Manage Accounts" as manageAccounts
-        usecase "Monitor Performance" as monitorPerformance
-        usecase "Apply Promotions" as applyPromotions
-        usecase "Handle Complaints" as handleComplaints
-    }
+    %% Functionalities - Restaurant
+    F17(("Receive New Orders"))
+    F18(("Confirm Order Preparation"))
+    F19(("Update Menu / Availability"))
 
-    %%% Relationships
-    customer --> register
-    customer --> browseRestaurants
-    customer --> browseMenu
-    customer --> addToCart
-    customer --> placeOrder
-    customer --> makePayment
-    customer --> trackOrder
-    customer --> cancelOrder
-    customer --> viewHistory
-    customer --> notifications
-    customer --> referFriends
+    %% Functionalities - Admin
+    F20(("Manage Users, Restaurants, Staff"))
+    F21(("Monitor Orders & Performance"))
+    F22(("Apply Promotions / Discounts"))
+    F23(("Handle Complaints / Cancellations"))
 
-    courier --> receiveRequests
-    courier --> viewLocations
-    courier --> updateStatus
-    courier --> communicate
-    courier --> viewDeliveryHistory
+    %% Connections Customer -> Functionalities
+    A --> F1
+    A --> F2
+    A --> F3
+    A --> F4
+    A --> F5
+    A --> F6
+    A --> F7
+    A --> F8
+    A --> F9
+    A --> F10
+    A --> F11
 
-    restaurant --> receiveOrders
-    restaurant --> confirmOrder
-    restaurant --> updateMenu
+    %% Connections Delivery Staff -> Functionalities
+    B --> F12
+    B --> F13
+    B --> F14
+    B --> F15
+    B --> F16
 
-    admin --> manageAccounts
-    admin --> monitorPerformance
-    admin --> applyPromotions
-    admin --> handleComplaints
+    %% Connections Restaurant -> Functionalities
+    C --> F17
+    C --> F18
+    C --> F19
+
+    %% Connections Admin -> Functionalities
+    D --> F20
+    D --> F21
+    D --> F22
+    D --> F23
+
 
 ### Problems & Limitations
 - Not campus-focused, only city-wide delivery  
@@ -203,39 +209,49 @@ useCaseDiagram
 
 ## 🆕 Proposed System
 
-### Use Case of AASTU Bite
- 
-    actor "Student" as student
-    actor "Cafeteria Staff" as staff
-    actor "System Admin" as admin
+%% AASTU Bite Use Case Diagram
+%% Actors: stick figures, Functionalities: ovals
+%% Use Mermaid's class for shapes
 
-    rectangle CafeteriaOrderSystem {
-        usecase "Browse Home Page\n(Featured Menu & Quick Links)" as home
-        usecase "View Menu Pages\n(Images, Description, Price, Availability)" as menu
-        usecase "Select Cafeteria\n(Central or KK)" as selectCafeteria
-        usecase "Manage Cart\n(Add/Remove Items, Update Quantities, Dynamic Total)" as cart
-        usecase "Fill Order Form\n(Name, ID, Contact, Cafeteria)" as orderForm
-        usecase "Validate Form\n(JavaScript Validation)" as validate
-        usecase "Confirm Order\n(Order Summary)" as confirm
-        usecase "Responsive Design\n(Mobile, Tablet, Desktop)" as responsive
-        usecase "(Future) Map/GPS Integration\n(Select Delivery Location, Track Orders)" as gps
-        usecase "(Future) Adaptive Recommendations\n(Popular Meals, Previous Orders)" as recommendations
-        usecase "(Future) Backend Integration\n(Store Orders & Student Data)" as backend
-    }
+flowchart TD
+    %% Actors
+    A[/"Student"/] 
+    B[/"Cafeteria Staff"/] 
+    C[/"Admin"/]
 
-    student --> home
-    student --> menu
-    student --> selectCafeteria
-    student --> cart
-    student --> orderForm
-    student --> validate
-    student --> confirm
-    student --> responsive
-    student --> gps
-    student --> recommendations
+    %% Functionalities (Ovals)
+    F1(("Home Page")) 
+    F2(("Menu Pages")) 
+    F3(("Cafeteria Selection")) 
+    F4(("Cart Management")) 
+    F5(("Order Form")) 
+    F6(("JavaScript Validation")) 
+    F7(("Order Summary")) 
+    F8(("Responsive Design")) 
+    F9(("Future Map/GPS Integration")) 
+    F10(("Future Adaptive Recommendations")) 
+    F11(("Future Backend Integration"))
 
-    staff --> backend
-    admin --> backend
+    %% Connections Student -> Functionalities
+    A --> F1
+    A --> F2
+    A --> F3
+    A --> F4
+    A --> F5
+    A --> F6
+    A --> F7
+    A --> F8
+    A --> F9
+    A --> F10
+
+    %% Connections Cafeteria Staff -> Functionalities
+    B --> F5
+    B --> F7
+    B --> F11
+
+    %% Connections Admin -> Functionalities
+    C --> F11
+    C --> F10
 
 
 ## 🌟 Featured Products / Adaptive
