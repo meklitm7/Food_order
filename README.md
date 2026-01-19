@@ -1,5 +1,5 @@
 # 🍴 AASTU Bite — Student Cafeteria Food Ordering System
-*(Serving Central & KK cafeterias at AASTU)*
+*(Serving Central & KK cafeterias at AASTU — Phase 1 Prototype)*
 
 ---
 
@@ -9,108 +9,248 @@
 ---
 
 ## 👥 Team / Organization
-- **Organization:** AASTU Bite  
+- **Organization:** AASTU Bite Team  
 - **Course:** Internet Programming I (Mini Project)  
 - **Institution:** Addis Ababa Science and Technology University (AASTU)  
 
 ---
 
-## 📚 Background & Problem Statement
-At AASTU, students rely heavily on two main cafeterias—**Central** and **KK**—for daily meals. Currently, ordering food means calling the cafeteria or waiting in long queues, which creates **frustration, delays, and high workload for staff**.  
+## 📚 Introduction
+AASTU Bite is a **web-based food ordering system** designed to simplify and modernize food ordering at AASTU. Students can browse menus, add items to a cart, select the cafeteria (Central or KK), and submit orders online.  
 
-🎯 **Goal:** Simplify and modernize the food-ordering process by creating an **interactive front-end website** where students can browse menus, choose their food, and select the cafeteria (KK or Central) for pickup.  
-
-> Think of it as your **personal cafeteria assistant online!**  
+This system is a **Phase 1 prototype**, focusing on front-end features while preparing for **backend integration, GPS/map delivery, notifications, and mobile app expansion** in future phases.  
 
 ---
 
-## 🏆 Objectives
-- Design a **clear, responsive, and user-friendly website**.  
-- Implement **dynamic features**: menu browsing, cart management, and order forms with validation using HTML, CSS, and JavaScript.  
-- Allow users to **choose the cafeteria (KK or Central)** when placing an order.  
-- Deliver a **working front-end prototype** ready for backend integration later.  
+## 🌍 Context
+At AASTU, students depend on multiple cafeterias for daily meals. Currently:  
+
+- Ordering requires **calling the cafeteria or standing in long queues**  
+- Staff face **high workloads and order management challenges**  
+- Students experience **frustration and delays**, especially during peak hours  
+
+The system will operate in the **university environment**, serving students and cafeteria staff, and will eventually expand to include all cafeterias with GPS delivery and backend support.  
 
 ---
 
-## 📌 Scope
-**Cafeterias Covered:** Central and KK  
-**Users:** Students & cafeteria staff  
-
-**Phase 1 (Mini Project):**  
-- Front-end prototype (HTML/CSS/JS) only  
-- No database or server yet  
-
-**Future Scope (Phase 2+):**  
-- PHP backend & database for orders  
-- Student authentication & order history  
-- Admin dashboard for cafeterias  
-- Notifications when orders are ready  
+## 🚀 Motivation
+- Reduce waiting times and improve ordering convenience  
+- Provide a **modern, interactive front-end solution**  
+- Prepare for **future GPS/map-based delivery and mobile app integration**  
+- Support cafeteria staff by reducing workload and errors in order handling  
 
 ---
 
-## 🍔 Key Features (Functional Requirements)
-1. **Home Page** – Quick links to cafeterias, featured menu items, and project branding.  
-2. **Menu Pages** – Displays all food items with **images, descriptions, prices, and availability**.  
-3. **Cafeteria Selection** – Students select **Central or KK** for their order.  
-4. **Cart System** – Add/remove items, update quantities, see totals **dynamically**.  
-5. **Order Form** – Collects student info (name, ID, contact, pickup cafeteria) with **JavaScript validation**.  
-6. **Order Summary** – Shows final order details before confirmation (prototype phase: **no database yet**).  
-7. **Responsive Design** – Works on **mobile and desktop** for on-the-go students.  
+## 🎯 Objectives
+
+### General Objective
+Develop a **dynamic, web-based food ordering system** for AASTU cafeterias.  
+
+### Specific Objectives
+- Design a **responsive, user-friendly website**  
+- Implement **dynamic menu browsing and cart management**  
+- Allow students to **choose the cafeteria** (Central or KK)  
+- Collect student information via **validated order forms**  
+- Display **order summary and confirmation**  
+- Prepare for **future backend integration and database storage**  
+- Plan for **GPS/map delivery and notifications**  
+- Ensure **future scalability** for additional cafeterias  
 
 ---
 
-## ⚡ Non-Functional Requirements
-- **Usability:** Few clicks, intuitive navigation.  
-- **Performance:** Lightweight and **fast-loading pages**.  
-- **Maintainability:** Modular and clean HTML/CSS/JS ready for future backend integration.  
+## 📌 Corresponding Requirements
+| Objective | Requirement |
+|-----------|-------------|
+| Responsive website | HTML5, CSS3, JavaScript with responsive design |
+| Dynamic menu browsing | Menu pages with images, descriptions, availability |
+| Cafeteria selection | Ability to select Central or KK during order |
+| Cart management | Add/remove items, update quantities, dynamic total |
+| Form validation | JavaScript checks for student info & order accuracy |
+| Order summary | Show final order details before submission |
+| Backend preparation | Modular code for future PHP/MySQL integration |
+| GPS/Map delivery (future) | System design prepared for location selection & tracking |
+| Notifications (future) | Alerts when order is ready |
+| Scalability | Architecture supports expansion to other cafeterias |
 
 ---
 
-## 💻 Proposed Technology Stack (Phase 1)
-- **Front-end:** HTML5, CSS3 , JavaScript  
-- **Hosting:** Local or simple static hosting  
-- **Future:** PHP + MySQL/SQLite + admin dashboard  
+## 🍔 Functional Requirements
+1. Home Page – Quick navigation and featured menu items  
+2. Menu Pages – Food items with images, descriptions, prices, availability  
+3. Cafeteria Selection – Central or KK for each order  
+4. Cart System – Add/remove items, update quantities, dynamic total  
+5. Order Form – Collect student info (name, ID, contact, cafeteria)  
+6. Order Validation – Ensure accurate data submission  
+7. Order Summary – Display before final submission  
+8. Responsive Design – Mobile and desktop friendly  
+9. Future GPS/Map Delivery – Select drop location and track orders  
+10. Notifications – Alerts when orders are ready  
+11. Adaptive Features – Recommend popular items based on previous orders  
 
 ---
 
-## 📅 Implementation Plan & Timeline
-| Phase | Duration | Tasks |
-|-------|---------|-------|
-| Phase 0 — Proposal & Design | 1 week | Wireframes, synopsis, design planning |
-| Phase 1 — Front-end Implementation | 2–3 weeks | Responsive pages, cart logic, cafeteria selection, validation |
-| Phase 2 — Testing & Demo | 1 week | Peer testing, layout fixes, demo prep |
-| Phase 3 — Server Integration (Future) | TBD | PHP endpoints, database, admin dashboard |
+## 💡 Significance of the System
+- Reduces waiting time for students  
+- Minimizes staff workload and errors  
+- Provides **interactive, convenient, and scalable ordering**  
+- Prepares a foundation for **future backend, mobile, and GPS delivery features**  
 
 ---
 
-## 📦 Deliverables
-- `docs/Synopsis.md` – This document  
-- Front-end files: `index.html`, `menu.html`, `cart.html`, `styles.css`, `app.js`  
-- Demo presentation & usage notes  
+## 👥 Beneficiaries of the System
+- **Students:** Faster, easier food ordering  
+- **Cafeteria staff:** Better order management and preparation workflow  
+- **University administration:** Improved cafeteria service efficiency  
 
 ---
 
-## 🚀 Future Enhancements
-- Persistent order storage with PHP & database  
-- Student authentication & order history  
-- Cafeteria admin dashboard to manage menu and view orders  
-- Notifications when orders are ready  
-- Expansion to more cafeterias or campus-wide rollout  
+## 🔧 Feasibility Analysis
+
+### Technical Feasibility
+- Front-end prototype using **HTML, CSS, JavaScript**  
+- System can be integrated with **PHP/MySQL backend** in Phase 2  
+- Prepared for **future GPS/map delivery using APIs**
+
+### Economic Feasibility
+- Development uses **open-source technologies**  
+- No high-cost servers needed for Phase 1  
+- Potential savings in staff time and improved service efficiency
+
+### Operational Feasibility
+- Easy for students to use  
+- Simple for cafeteria staff to implement order preparation workflow  
+- Scalable for future expansion to other cafeterias  
 
 ---
 
-## ✅ Evaluation Criteria (For Teacher)
-- **Correctness:** All front-end features implemented  
-- **Responsiveness:** Works on mobile & desktop  
-- **Code Quality:** Modular, clean, commented  
-- **Presentation:** Clear demo and explanation of roadmap  
+## 📄 SRS Overview of Existing System (beU Delivery)
+
+### Use Case of Existing System (Reference)
+useCaseDiagram
+    actor "Customer/User" as customer
+    actor "Delivery Staff/Courier" as courier
+    actor "Restaurant" as restaurant
+    actor "Admin (System/Platform)" as admin
+
+    rectangle beUDeliverySystem {
+        %%% Customer/User Functionalities
+        usecase "Register / Login" as register
+        usecase "Browse Restaurants" as browseRestaurants
+        usecase "Browse Menu Items" as browseMenu
+        usecase "Add Items to Cart" as addToCart
+        usecase "Place Order" as placeOrder
+        usecase "Make Payment" as makePayment
+        usecase "Track Order (Real-time GPS)" as trackOrder
+        usecase "Cancel Order" as cancelOrder
+        usecase "View Order History" as viewHistory
+        usecase "Receive Notifications" as notifications
+        usecase "Refer Friends / Rewards" as referFriends
+
+        %%% Delivery Staff/Courier Functionalities
+        usecase "Receive Delivery Requests" as receiveRequests
+        usecase "View Locations (Restaurant & Customer)" as viewLocations
+        usecase "Update Delivery Status" as updateStatus
+        usecase "Communicate with Customer" as communicate
+        usecase "View Delivery History" as viewDeliveryHistory
+
+        %%% Restaurant Functionalities
+        usecase "Receive New Orders" as receiveOrders
+        usecase "Confirm Order Preparation" as confirmOrder
+        usecase "Update Menu / Availability" as updateMenu
+
+        %%% Admin/System Functionalities
+        usecase "Manage Accounts" as manageAccounts
+        usecase "Monitor Performance" as monitorPerformance
+        usecase "Apply Promotions" as applyPromotions
+        usecase "Handle Complaints" as handleComplaints
+    }
+
+    %%% Relationships
+    customer --> register
+    customer --> browseRestaurants
+    customer --> browseMenu
+    customer --> addToCart
+    customer --> placeOrder
+    customer --> makePayment
+    customer --> trackOrder
+    customer --> cancelOrder
+    customer --> viewHistory
+    customer --> notifications
+    customer --> referFriends
+
+    courier --> receiveRequests
+    courier --> viewLocations
+    courier --> updateStatus
+    courier --> communicate
+    courier --> viewDeliveryHistory
+
+    restaurant --> receiveOrders
+    restaurant --> confirmOrder
+    restaurant --> updateMenu
+
+    admin --> manageAccounts
+    admin --> monitorPerformance
+    admin --> applyPromotions
+    admin --> handleComplaints
+
+### Problems & Limitations
+- Not campus-focused, only city-wide delivery  
+- Requires mobile app and account creation  
+- Delivery can be unreliable or slow  
+- Does not handle cafeteria-specific ordering workflows  
 
 ---
 
-## 🎯 Conclusion
-AASTU Bite aims to **reduce waiting time and stress** by offering a **friendly, interactive web ordering prototype** for AASTU’s Central and KK cafeterias.  
+## 🆕 Proposed System
 
-This mini project focuses on **front-end functionality** while building a solid foundation for backend features in future courses.  
+### Use Case of AASTU Bite
+ 
+    actor "Student" as student
+    actor "Cafeteria Staff" as staff
+    actor "System Admin" as admin
+
+    rectangle CafeteriaOrderSystem {
+        usecase "Browse Home Page\n(Featured Menu & Quick Links)" as home
+        usecase "View Menu Pages\n(Images, Description, Price, Availability)" as menu
+        usecase "Select Cafeteria\n(Central or KK)" as selectCafeteria
+        usecase "Manage Cart\n(Add/Remove Items, Update Quantities, Dynamic Total)" as cart
+        usecase "Fill Order Form\n(Name, ID, Contact, Cafeteria)" as orderForm
+        usecase "Validate Form\n(JavaScript Validation)" as validate
+        usecase "Confirm Order\n(Order Summary)" as confirm
+        usecase "Responsive Design\n(Mobile, Tablet, Desktop)" as responsive
+        usecase "(Future) Map/GPS Integration\n(Select Delivery Location, Track Orders)" as gps
+        usecase "(Future) Adaptive Recommendations\n(Popular Meals, Previous Orders)" as recommendations
+        usecase "(Future) Backend Integration\n(Store Orders & Student Data)" as backend
+    }
+
+    student --> home
+    student --> menu
+    student --> selectCafeteria
+    student --> cart
+    student --> orderForm
+    student --> validate
+    student --> confirm
+    student --> responsive
+    student --> gps
+    student --> recommendations
+
+    staff --> backend
+    admin --> backend
+
+
+## 🌟 Featured Products / Adaptive
+- Dynamic menu recommendations based on student usage  
+- Adaptive order suggestions (Phase 2+)  
+- Modular code ready for backend integration  
+
+---
+
+## 📄 Demonstration (Second Page)
+- Phase 1 prototype: fully functional front-end  
+- Responsive web pages for home, menu, cart, and order submission  
+- Cafeteria selection (Central & KK) implemented  
+- Cart dynamically updates totals  
+- Order summary confirms student info and selections  
 
 ---
 
