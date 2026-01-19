@@ -124,80 +124,73 @@ Develop a **dynamic, web-based food ordering system** for AASTU cafeterias.
 ---
 
 ## 📄 SRS Overview of Existing System (beU Delivery)
-``` mermaid
+
 
 ### Use Case of Existing System (Reference)
-%% beU Delivery Use Case Diagram
-%% Actors: stick figures, Functionalities: ovals
+useCaseDiagram
+    actor "Customer/User" as customer
+    actor "Delivery Staff" as deliveryStaff
+    actor "Restaurant" as restaurant
+    actor "Admin" as admin
 
-flowchart TD
-    %% Actors
-    A[/"Customer/User"/]
-    B[/"Delivery Staff"/]
-    C[/"Restaurant"/]
-    D[/"Admin"/]
+    rectangle beUDeliverySystem {
+        %%% Customer/User Functionalities
+        usecase "Register / Login" as register
+        usecase "Browse Restaurants" as browseRestaurants
+        usecase "Browse Menu Items" as browseMenu
+        usecase "Add Items to Cart" as addToCart
+        usecase "Place Order" as placeOrder
+        usecase "Make Payment" as makePayment
+        usecase "Track Order via GPS" as trackOrder
+        usecase "Cancel Order" as cancelOrder
+        usecase "View Order History" as viewHistory
+        usecase "Receive Notifications" as notifications
+        usecase "Refer Friends / Rewards" as referFriends
 
-    %% Functionalities - Customer/User
-    F1(("Register / Login"))
-    F2(("Browse Restaurants"))
-    F3(("Browse Menu Items"))
-    F4(("Add Items to Cart"))
-    F5(("Place Order"))
-    F6(("Make Payment"))
-    F7(("Track Order via GPS"))
-    F8(("Cancel Order"))
-    F9(("View Order History"))
-    F10(("Receive Notifications"))
-    F11(("Refer Friends / Rewards"))
+        %%% Delivery Staff Functionalities
+        usecase "Receive Delivery Requests" as receiveRequests
+        usecase "View Restaurant & Customer Location" as viewLocations
+        usecase "Update Delivery Status" as updateStatus
+        usecase "Communicate with Customer" as communicate
 
-    %% Functionalities - Delivery Staff
-    F12(("Receive Delivery Requests"))
-    F13(("View Restaurant & Customer Location"))
-    F14(("Update Delivery Status"))
-    F15(("Communicate with Customer"))
-    F16(("View Delivery History"))
+        %%% Restaurant Functionalities
+        usecase "Receive New Orders" as receiveOrders
+        usecase "Confirm Order Preparation" as confirmOrder
+        usecase "Update Menu / Availability" as updateMenu
 
-    %% Functionalities - Restaurant
-    F17(("Receive New Orders"))
-    F18(("Confirm Order Preparation"))
-    F19(("Update Menu / Availability"))
+        %%% Admin Functionalities
+        usecase "Manage Users, Restaurants, and Delivery Staff" as manageAccounts
+        usecase "Monitor Orders and Performance" as monitorPerformance
+        usecase "Apply Promotions / Discounts" as applyPromotions
+        usecase "Handle Complaints / Cancellations" as handleComplaints
+    }
 
-    %% Functionalities - Admin
-    F20(("Manage Users, Restaurants, Staff"))
-    F21(("Monitor Orders & Performance"))
-    F22(("Apply Promotions / Discounts"))
-    F23(("Handle Complaints / Cancellations"))
+    %%% Relationships
+    customer --> register
+    customer --> browseRestaurants
+    customer --> browseMenu
+    customer --> addToCart
+    customer --> placeOrder
+    customer --> makePayment
+    customer --> trackOrder
+    customer --> cancelOrder
+    customer --> viewHistory
+    customer --> notifications
+    customer --> referFriends
 
-    %% Connections Customer -> Functionalities
-    A --> F1
-    A --> F2
-    A --> F3
-    A --> F4
-    A --> F5
-    A --> F6
-    A --> F7
-    A --> F8
-    A --> F9
-    A --> F10
-    A --> F11
+    deliveryStaff --> receiveRequests
+    deliveryStaff --> viewLocations
+    deliveryStaff --> updateStatus
+    deliveryStaff --> communicate
 
-    %% Connections Delivery Staff -> Functionalities
-    B --> F12
-    B --> F13
-    B --> F14
-    B --> F15
-    B --> F16
+    restaurant --> receiveOrders
+    restaurant --> confirmOrder
+    restaurant --> updateMenu
 
-    %% Connections Restaurant -> Functionalities
-    C --> F17
-    C --> F18
-    C --> F19
-
-    %% Connections Admin -> Functionalities
-    D --> F20
-    D --> F21
-    D --> F22
-    D --> F23
+    admin --> manageAccounts
+    admin --> monitorPerformance
+    admin --> applyPromotions
+    admin --> handleComplaints
 
 
 ### Problems & Limitations
