@@ -132,7 +132,7 @@ useCaseDiagram
     actor "Delivery Staff" as deliveryStaff
     actor "Restaurant" as restaurant
     actor "Admin" as admin
-
+``` mermaid
     rectangle beUDeliverySystem {
         %%% Customer/User Functionalities
         usecase "Register / Login" as register
@@ -191,7 +191,7 @@ useCaseDiagram
     admin --> monitorPerformance
     admin --> applyPromotions
     admin --> handleComplaints
-
+```
 
 ### Problems & Limitations
 - Not campus-focused, only city-wide delivery  
