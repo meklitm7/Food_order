@@ -124,6 +124,7 @@ Develop a **dynamic, web-based food ordering system** for AASTU cafeterias.
 ---
 
 ## 📄 SRS Overview of Existing System (beU Delivery)
+``` mermaid
 
 ### Use Case of Existing System (Reference)
 %% beU Delivery Use Case Diagram
