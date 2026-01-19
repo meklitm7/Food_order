@@ -125,73 +125,17 @@ Develop a **dynamic, web-based food ordering system** for AASTU cafeterias.
 
 ## 📄 SRS Overview of Existing System (beU Delivery)
 
-
 ### Use Case of Existing System (Reference)
-useCaseDiagram
-    actor "Customer/User" as customer
-    actor "Delivery Staff" as deliveryStaff
-    actor "Restaurant" as restaurant
-    actor "Admin" as admin
-``` mermaid
-    rectangle beUDeliverySystem {
-        %%% Customer/User Functionalities
-        usecase "Register / Login" as register
-        usecase "Browse Restaurants" as browseRestaurants
-        usecase "Browse Menu Items" as browseMenu
-        usecase "Add Items to Cart" as addToCart
-        usecase "Place Order" as placeOrder
-        usecase "Make Payment" as makePayment
-        usecase "Track Order via GPS" as trackOrder
-        usecase "Cancel Order" as cancelOrder
-        usecase "View Order History" as viewHistory
-        usecase "Receive Notifications" as notifications
-        usecase "Refer Friends / Rewards" as referFriends
+**beU Delivery** is a commercial Ethiopian food delivery app:  
+- Connects users with multiple restaurants  
+- Offers app-based ordering, cart, payment, and GPS tracking  
+- Digital wallet, discounts, and referral rewards  
 
-        %%% Delivery Staff Functionalities
-        usecase "Receive Delivery Requests" as receiveRequests
-        usecase "View Restaurant & Customer Location" as viewLocations
-        usecase "Update Delivery Status" as updateStatus
-        usecase "Communicate with Customer" as communicate
+**Actors:** Customers, Delivery Staff  
 
-        %%% Restaurant Functionalities
-        usecase "Receive New Orders" as receiveOrders
-        usecase "Confirm Order Preparation" as confirmOrder
-        usecase "Update Menu / Availability" as updateMenu
-
-        %%% Admin Functionalities
-        usecase "Manage Users, Restaurants, and Delivery Staff" as manageAccounts
-        usecase "Monitor Orders and Performance" as monitorPerformance
-        usecase "Apply Promotions / Discounts" as applyPromotions
-        usecase "Handle Complaints / Cancellations" as handleComplaints
-    }
-
-    %%% Relationships
-    customer --> register
-    customer --> browseRestaurants
-    customer --> browseMenu
-    customer --> addToCart
-    customer --> placeOrder
-    customer --> makePayment
-    customer --> trackOrder
-    customer --> cancelOrder
-    customer --> viewHistory
-    customer --> notifications
-    customer --> referFriends
-
-    deliveryStaff --> receiveRequests
-    deliveryStaff --> viewLocations
-    deliveryStaff --> updateStatus
-    deliveryStaff --> communicate
-
-    restaurant --> receiveOrders
-    restaurant --> confirmOrder
-    restaurant --> updateMenu
-
-    admin --> manageAccounts
-    admin --> monitorPerformance
-    admin --> applyPromotions
-    admin --> handleComplaints
-```
+**Flow:**  
+1. Customer selects restaurant and food → adds to cart → pays → tracks delivery  
+2. Delivery staff receives order → picks up → delivers → updates status  
 
 ### Problems & Limitations
 - Not campus-focused, only city-wide delivery  
@@ -203,50 +147,26 @@ useCaseDiagram
 
 ## 🆕 Proposed System
 
-%% AASTU Bite Use Case Diagram
-%% Actors: stick figures, Functionalities: ovals
-%% Use Mermaid's class for shapes
+### Use Case of AASTU Bite
+**Actors:** Students, Cafeteria Staff  
 
-flowchart TD
-    %% Actors
-    A[/"Student"/] 
-    B[/"Cafeteria Staff"/] 
-    C[/"Admin"/]
+**Phase 1 Prototype:**  
+1. Student browses menu → adds items to cart → selects cafeteria → submits order  
+2. Cafeteria staff views order → prepares food  
 
-    %% Functionalities (Ovals)
-    F1(("Home Page")) 
-    F2(("Menu Pages")) 
-    F3(("Cafeteria Selection")) 
-    F4(("Cart Management")) 
-    F5(("Order Form")) 
-    F6(("JavaScript Validation")) 
-    F7(("Order Summary")) 
-    F8(("Responsive Design")) 
-    F9(("Future Map/GPS Integration")) 
-    F10(("Future Adaptive Recommendations")) 
-    F11(("Future Backend Integration"))
+**Phase 2+ Future Improvements:**  
+- GPS/map for delivery tracking  
+- Notifications when order is ready  
+- Backend database for order storage  
+- Mobile app version  
+- Expansion to additional cafeterias  
 
-    %% Connections Student -> Functionalities
-    A --> F1
-    A --> F2
-    A --> F3
-    A --> F4
-    A --> F5
-    A --> F6
-    A --> F7
-    A --> F8
-    A --> F9
-    A --> F10
+**Improvements over Existing System:**  
+- Campus-specific, affordable, and easy to use  
+- Scalable for future cafeterias and mobile integration  
+- Designed to handle student authentication and order history  
 
-    %% Connections Cafeteria Staff -> Functionalities
-    B --> F5
-    B --> F7
-    B --> F11
-
-    %% Connections Admin -> Functionalities
-    C --> F11
-    C --> F10
-
+---
 
 ## 🌟 Featured Products / Adaptive
 - Dynamic menu recommendations based on student usage  
