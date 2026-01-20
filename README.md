@@ -154,7 +154,8 @@ Develop a **dynamic, web-based food ordering system** for AASTU cafeterias.
  
 **Use Case Diagram:**  
 
-![AASTU Bite Use Case Diagram](image/use_case_aastubite.jpg)
+<img width="1032" height="618" alt="Screenshot 2026-01-19 203333" src="https://github.com/user-attachments/assets/120a5582-a122-45a1-964f-a9441f7c823d" />
+
 
 ---
 **Phase 2+ Future Improvements:**  
