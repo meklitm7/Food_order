@@ -144,6 +144,9 @@ Develop a **dynamic, web-based food ordering system** for AASTU cafeterias.
 - Does not handle cafeteria-specific ordering workflows  
 
 ---
+## Use case Diagram for Existing System
+<img width="1015" height="484" alt="Screenshot 2026-01-19 202948" src="https://github.com/user-attachments/assets/e57f9e3d-7526-45fb-badb-f9e641614969" />
+
 
 ## 🆕 Proposed System
 
