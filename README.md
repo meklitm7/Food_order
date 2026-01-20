@@ -148,12 +148,14 @@ Develop a **dynamic, web-based food ordering system** for AASTU cafeterias.
 ## 🆕 Proposed System
 
 ### Use Case of AASTU Bite
-**Actors:** Students, Cafeteria Staff  
+**Actors:**  
+- Students  
+- Cafeteria Staff  
 
-**Phase 1 Prototype:**  
-1. Student browses menu → adds items to cart → selects cafeteria → submits order  
-2. Cafeteria staff views order → prepares food  
+**Use Case Diagram:**  
+![AASTU Bite Use Case Diagram](image/use_case_aastubite.jpg)
 
+---
 **Phase 2+ Future Improvements:**  
 - GPS/map for delivery tracking  
 - Notifications when order is ready  
